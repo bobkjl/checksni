@@ -4,7 +4,7 @@
 port=`netstat -nlt|grep 443|wc -l`
 if [ $port -ne 1 ]
 then
- service sniproxy restart
+ sudo service sniproxy restart
 else
  echo "SNIProxy is running"
 fi
